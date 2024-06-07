@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- AppBarLayout with ImageView for background image -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitStart"
+            android:src="@drawable/dashboardimg"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Content below AppBarLayout -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Add your content here -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hi User!"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How Can I Help You Today?"
+                android:textSize="12sp" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/chatbot"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:text="Chatbot"
+                            android:clickable="true"
+                            android:src="@drawable/chatbot2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Talk"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/stress"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:focusable="true"
+                            android:text="Chatbot"
+                            android:clickable="true"
+                            android:src="@drawable/stress2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Stress"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/inspire"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:text="Chatbot"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:src="@drawable/inspire2"/>
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="Inspire "
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/productivity"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:text="Productivity"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/productivity2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Productivity"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/wellness"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/energy2"/>
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="Wellness"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/health"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:text="Productivity"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/heart2"/>
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="Health"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Happiness Coach"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/dashboard_relative1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/img_4"
+                        android:layout_margin="10dp"
+                        android:text="8"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not assigned"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@+id/dashboard_relative1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No upcoming sessions"
+                        android:textSize="18sp"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Try Today"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="100dp"
+                        android:textColor="#F44C4C"/>
+
+                    <Button
+                        android:id="@+id/btn_book_session"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/round_button_corner"
+                        android:text="book a session"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/listDivider" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Packs"
+                android:textSize="20sp"
+                android:layout_margin="10dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/cardimg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:src="@drawable/card1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="Get Energy"
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/cardimg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:src="@drawable/card2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="Inspire Yourself"
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/cardimg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/card9"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="Productivity Pack"
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Add more content as needed -->
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Fixed footer SOS button -->
+    <Button
+        android:id="@+id/sos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="S O S"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#FF0000"
+        android:background="@drawable/round_button_corner_red"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

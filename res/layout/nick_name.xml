@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/img_3"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_nickname1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="Hey! "
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_nickname2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_nickname1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffff"
+        android:text="Our conversations are private and anonymous, so there is no login. Just choose a nickname and were good to go."
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edt_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/text_nickname2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button_corner"
+        android:hint="Choose a Nickname..."
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#24899A"
+        android:text="next"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

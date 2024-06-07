@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textsos1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="S O S"
+        android:textColor="#ff0000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textsos2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textsos1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Are you in a Crisis?"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textsos2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="You are not alone. Help is just a call away."
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnCallNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button_corner_red"
+        android:onClick="callNumber1"
+        android:padding="10dp"
+        android:text="Contact Loved One"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCallNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCallNumber1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button_corner_red"
+        android:onClick="callNumber2"
+        android:padding="10dp"
+        android:text="Contact Helpline"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="If you are dealing with abuse, trauma or crisis, this app is not enough . It is important that you can talk to a person you feel safe sharing what you are dealing with. If there is no one , call the Helpline . Things will get better"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/btnCallNumber2"
+        android:background="?android:attr/listDivider" />
+
+</RelativeLayout>

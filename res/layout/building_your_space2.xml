@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amita_bold"
+        android:text="Feelings Check In"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <!-- Button 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <ImageButton
+                android:id="@+id/happy_button"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/happy"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="button1Clicked"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Happy"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Button 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <ImageButton
+                android:id="@+id/calm_button"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/calm"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="button2Clicked"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Calm"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Button 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <ImageButton
+                android:id="@+id/nervous_button"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/nervous"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="button3Clicked"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Nervous"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <!-- Button 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <ImageButton
+                android:id="@+id/scared_button"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/scared"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="button1Clicked"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Scared"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Button 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <ImageButton
+                android:id="@+id/tired_button"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/tired"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="button2Clicked"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tired"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Button 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <ImageButton
+                android:id="@+id/silly_button"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/silly"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="button3Clicked"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Silly"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <!-- Button 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <ImageButton
+                android:id="@+id/worried_button"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/worried"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="button1Clicked"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Woried"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Button 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <ImageButton
+                android:id="@+id/frustrated_button"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/frustrated"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="button2Clicked"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Frustrated"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Button 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <ImageButton
+                android:id="@+id/shy_button"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/shy"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="button3Clicked"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Shy"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <!-- Button 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <ImageButton
+                android:id="@+id/sad_button"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sad"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="button1Clicked"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sad"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Button 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <ImageButton
+                android:id="@+id/excited_button"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/excited"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="button2Clicked"/>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Excited"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Button 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <ImageButton
+                android:id="@+id/angry_button"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:src="@drawable/angry"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="button3Clicked"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Angry"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="That's All For Now"
+        android:textStyle="bold"
+        android:background="#87CEEB" />
+
+</LinearLayout>

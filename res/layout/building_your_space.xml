@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_buildingyourspace1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Building your space..."
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/text_buildingyourspace2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add challenges that you would like help with to your space."
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First column of checkboxes -->
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox1_1"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Stress" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2_1"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Anxiety" />
+            </LinearLayout>
+
+            <!-- Add more rows here -->
+            <!-- For brevity, just copy the above LinearLayout with checkboxes and modify IDs and text for each row -->
+            <!-- This example shows only two rows, repeat for eight rows -->
+
+            <!-- Second column of checkboxes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox1_2"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Depression" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2_2"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Anger" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox1_3"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Loneliness" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2_3"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Meditation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox1_4"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Low Energy" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2_4"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Relationships" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox1_5"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Loss" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2_5"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Motivation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox1_6"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Pregnancy" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2_6"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Sleep" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox1_7"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Trauma" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2_7"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/receive_round_box"
+                    android:text="Health" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_building"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:backgroundTint="#24899A"
+                android:background="@drawable/round_button"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="THAT'S ALL FOR NOW" />
+
+            <!-- Add more rows here similar to the above rows to complete eight rows -->
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

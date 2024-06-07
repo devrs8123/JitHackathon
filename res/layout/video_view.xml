@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/splashText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="149dp"
+        android:text="Breathe..."
+        android:textSize="24sp"
+        android:textColor="#877F7F"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/splashText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="De-Clutter Your Mind"
+        android:textSize="24sp"
+        android:textColor="#877F7F"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/splashText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="You got this"
+        android:textSize="24sp"
+        android:textColor="#877F7F"
+        android:visibility="visible" />
+
+</RelativeLayout>
