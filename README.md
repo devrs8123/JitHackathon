@@ -7,7 +7,7 @@ or Scan the QR ![image](https://github.com/devrs8123/JitHackathon/assets/8560958
 
 # Team DA Hacks
 Contributors : 
-Dev R S
-Anusha M S
-Tharun R
-Deekshith D
+Dev R S ,
+Anusha M S ,
+Tharun R ,
+Deekshith D ,
